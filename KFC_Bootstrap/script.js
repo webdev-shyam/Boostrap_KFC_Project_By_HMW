@@ -36,7 +36,14 @@ function setInitialTheme() {
 setInitialTheme();
 toggleBtn.addEventListener('change', changeMode);
 
+// Adding Preloader
+const preloader = document.querySelector("#preloader");
 
+if (preloader) {
+  document.addEventListener('DOMContentLoaded', () => {
+    preloader.remove(); // Remove the preloader when the HTML is fully loaded
+  });
+}
 
 
 // Adding GlightBox

@@ -405,7 +405,7 @@ body[data-bs-theme='dark'] {
     height: 100px;
 }
 
-/* Adding preloader
+Adding preloader
 #preloader {
     height: 100vh;
     width: 100%;
@@ -466,7 +466,7 @@ body[data-bs-theme='dark'] {
         transform: translate(-50%, -50%);
         opacity: 0;
     }
-} */
+}
 
 /* Scroll to top Btn */
 #myBtn {
