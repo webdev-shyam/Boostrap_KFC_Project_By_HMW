@@ -1,0 +1,493 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* Light Theme Styles */
+body[data-bs-theme='light'] {
+    background-color: white; /* Set body background to white */
+    color: black; /* Set text color to black */
+}
+
+/* Dark Theme Styles */
+body[data-bs-theme='dark'] {
+    background-color: #121212; /* Set body background to dark */
+    color: white; /* Set text color to white */
+}
+
+/* Optional: Add styles for your switch to match the theme */
+.form-check-label {
+    color: inherit; /* Make the label color inherit from the body color */
+}
+
+
+
+
+
+
+
+/* Customizing the  Nav Bar Start */
+
+.navbar-brand {
+    letter-spacing: 3px;
+}
+
+.nav-item a {
+    color: #fff;
+}
+
+.navbar {
+    padding-top: 0.5rem;
+    /* Adjust as needed */
+    padding-bottom: 0.5rem;
+    /* Adjust as needed */
+}
+
+.kfc-logo {
+    height: 50px;
+    /* Adjust based on your design */
+    width: auto;
+    /* Keep aspect ratio */
+}
+
+.navbar .navbar-brand {
+    font-size: 1rem;
+    /* Adjust font size as needed */
+}
+
+.navbar .nav-link {
+    padding-top: 0.5rem;
+    /* Adjust padding */
+    padding-bottom: 0.5rem;
+    /* Adjust padding */
+}
+
+.dropdown-menu {
+    padding: 0.5rem 0;
+    /* Adjust as needed */
+}
+
+/* Adding media queries to be responsive start */
+@media screen and (min-width:992px) {
+
+    /* Adding hover effects on nav-links start */
+    .nav-item {
+        position: relative;
+    }
+
+    .nav-item a::before {
+        position: absolute;
+        content: "";
+        background-color: #fff;
+        color: #087bb1;
+        width: 80%;
+        height: 2px;
+        left: 7px;
+        bottom: 6px;
+        transform: scale(0);
+        transform-origin: right;
+        transition: 0.5s ease-in-out;
+
+
+    }
+
+    .nav-item a:hover::before {
+        transform-origin: left;
+        transform: scale(1);
+
+    }
+
+}
+
+/* Adding hover effects on nav-links end */
+/* Adding media queries to be responsive end */
+/* Customizing the  Nav Bar End */
+
+
+
+/* Customizing the Home Section Start */
+
+.fa-circle-play {
+    transition: 0.5s ease-in-out;
+}
+
+.fa-circle-play:hover {
+    transform: scale(1.5);
+
+}
+
+@media screen and (min-width:992px) {
+    .hero {
+        height: 90vh;
+    }
+}
+
+
+/* Customizing the Home Section End */
+/* About Section Start */
+.aboutText {
+    text-align: justify;
+}
+
+@media screen and (min-width:1200px) {
+    #kfc-about-image {
+        height: 820px;
+    }
+
+    .about-video {
+        height: 270px;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .about-video {
+        height: 390px;
+    }
+}
+
+/* About Section End */
+/* Event Section Start */
+/* Adding Media Queries to be responsive to Event Carousel */
+.event-image {
+    width: 100%;
+    /* Ensure the image takes the full width of its container */
+    height: auto;
+    /* Maintain aspect ratio for all screen sizes */
+}
+
+@media screen and (min-width: 768px) {
+    .event-image {
+        height: 400px;
+        /* Specific height for medium screens */
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .event-image {
+        height: 580px;
+        /* Specific height for large screens */
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .event-image {
+        height: 620px;
+        /* Specific height for extra-large screens */
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+    .event-image {
+        height: 680px;
+        /* Specific height for very large screens */
+    }
+}
+
+/* Gallery Section */
+
+.galleryImgShifter {
+    position: relative;
+    /* background-color: greenyellow; */
+    bottom: 150px;
+
+
+}
+
+.prevBtn,
+.nextBtn {
+
+    color: hsla(224, 79%, 50%, 0.719);
+
+}
+
+.nextBtn {
+    float: right;
+}
+
+/* Adding hover effects to btns to be attracitve */
+.prevBtn:hover,
+.nextBtn:hover {
+    color: rgb(106, 214, 5);
+}
+
+.kfc-gallery-img img {
+    height: 300px;
+    width: 400px;
+}
+
+.prevBtn:hover {
+    transform: translate(-10px);
+    transition: 0.5s;
+}
+
+.nextBtn:hover {
+    transform: translate(10px);
+    transition: 0.5s;
+}
+
+.smallImg img {
+    display: none;
+}
+
+/* Adding media queries to be responsive to all gallery images */
+@media screen and (min-width:576px) {
+
+    .galleryImgShifter {
+        position: relative;
+
+
+        bottom: 140px;
+        width: 500px;
+
+    }
+
+
+}
+
+@media screen and (min-width:768px) {
+    .kfc-gallery-img img {
+        height: 300px;
+        width: 400px;
+    }
+
+    .galleryImgShifter {
+        position: relative;
+        /* background-color: greenyellow; */
+        bottom: 160px;
+
+    }
+
+    .smallImg img {
+        display: block;
+        height: 80px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .kfc-gallery-img img {
+        height: 300px;
+        width: 400px;
+    }
+
+    .galleryImgShifter {
+        position: relative;
+        /* background-color: greenyellow; */
+        bottom: 170px;
+
+    }
+
+    .smallImg img {
+        display: block;
+        height: 90px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .kfc-gallery-img img {
+        height: 400px;
+        width: 600px;
+    }
+
+    .galleryImgShifter {
+        position: relative;
+        /* background-color: greenyellow; */
+        bottom: 220px;
+        width: 700px;
+
+
+    }
+
+    .smallImg img {
+        display: block;
+        height: 110px;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .kfc-gallery-img img {
+        height: 500px;
+        width: 800px;
+    }
+
+    .galleryImgShifter {
+        position: relative;
+        /* background-color: greenyellow; */
+        bottom: 300px;
+        width: 900px;
+
+    }
+
+    .smallImg img {
+        display: block;
+        height: 130px;
+    }
+}
+
+/* Gallery Section End */
+.contactItem {
+    height: 100px;
+}
+
+.contactItem i {
+    color: rgba(255, 0, 0, 0.973);
+    transition: 0.4s ease-in-out;
+}
+
+.contactItem i:hover {
+    color: #087bb1;
+}
+
+.contactImg img {
+    height: 250px;
+}
+
+@media screen and (min-width:768px) {
+    .contactImg img {
+        height: 350px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .contactImg img {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .contactImg img {
+        height: 250px;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .contactImg img {
+        height: 200px;
+    }
+}
+
+/* Footer section */
+
+@media screen and (min-width:768px) {
+    .footer-section {
+        height: 270px;
+    }
+
+    .footerImg img {
+        height: 100px;
+        width: 350px;
+    }
+}
+
+.footNavText {
+    font-size: 18px;
+}
+
+.footer-section {
+    height: 270px;
+}
+
+.footNavItem i {
+    font-size: 1.52rem;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+.footNavItem i:hover {
+    color: rgb(255, 22, 0)
+}
+
+.footerImg img {
+    height: 100px;
+}
+
+/* Adding preloader
+#preloader {
+    height: 100vh;
+    width: 100%;
+    inset: 0;
+    z-index: 99999;
+    background-color: #fff;
+    position: fixed;
+}
+
+#preloader::before,
+#preloader::after {
+    content: "";
+    position: absolute;
+    border: 5px double red;
+    border-radius: 50%;
+    transition: 2s;
+    animation: animate-preloader 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.loading-text{
+    position: absolute;
+    top: 60%;
+    left: 51%;
+    font-size: 1.25rem;
+    transform: translate(-50%,-50%);
+}
+
+#preloader::after {
+    animation-delay: -0.5s;
+}
+
+@keyframes animate-preloader {
+    0% {
+        height: 10px;
+        width: 10px;
+        top: 50%;
+        left: 50%;
+        border: 2px solid red;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+
+    75% {
+        height: 50px;
+        width: 50px;
+        top: 50%;
+        left: 50%;
+        border: 10px solid rgb(17, 0, 255);
+        transform: translate(-50%, -50%);
+        opacity: 0.5;
+    }
+
+    100% {
+        height: 100px;
+        width: 100px;
+        top: 50%;
+        left: 50%;
+        border: 15px solid #ff029e;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+} */
+
+/* Scroll to top Btn */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 10px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #f00; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 15px; /* Rounded corners */
+    font-size: 20px; /* Increase font size */
+    transition: 0.5s;
+  }
+  
+  #myBtn:hover {
+    background-color: #0375d1; /* Add a dark-grey background on hover */
+    transform: translate(0px, -5px);
+  }
+  

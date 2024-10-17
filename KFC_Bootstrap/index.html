@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap KFC Project</title>
+    <!-- Glight Box CSS CDN link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/css/glightbox.css"
+        integrity="sha512-iQ3H4A+iyBTP8M4ypX5PrTt2S+G1zmRjf0k0uOASKlFHysV8TL9ZoQyVwPss0D12IBTMoDEHA8+bg8a1viS9Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="images/kfc logo.png" type="image/x-icon">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- BootStrap CDN LINK CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- style.css file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-theme="light">
+
+
+    <!-- Nav Bar Start-->
+    <nav id="navBar" class="navbar navbar-expand-lg sticky-top bg-danger">
+        <div class="container-fluid">
+            <img class="kfc-logo" src="images/kfc logo.png" alt="kfc-logo">
+            <a class="text-light fw-bold m-3 fs-4 navbar-brand" href="#">KFC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+                    <li class="nav-item me-3">
+                        <a class="nav-link fs-5" aria-current="page" href="#hero-section">Home</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link fs-5" href="#shop-section">Menu</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link fs-5" href="#about-section">About</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link fs-5" href="#event-section">Events</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link fs-5" href="#gallery-section">Gallery</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link fs-5" href="#contact-section">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link fs-5 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Login
+                        </a>
+                        <ul class="dropdown-menu text-center bg-danger border-light">
+                            <li><a class="dropdown-item" href="#"><i class="me-2 fa-solid fa-user-plus"></i>Register</a>
+                            </li>
+                            <li><a class="dropdown-item " href="#"><i
+                                        class="me-2 fa-solid fa-right-to-bracket"></i>Login</a></li>
+                            <li>
+                                <hr class="dropdown-divider border-light">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i
+                                        class="me-2 fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <div id="btnSwitch" class="form-check form-switch me-3 d-flex align-items-center">
+                    <input class="form-check-input me-2" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                    <label class="form-check-label fs-5 me-2 text-light" for="flexSwitchCheckDefault">Light</label>
+                  </div>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Nav Bar End -->
+
+
+    <!-- Scroll Spy Added -->
+    <div data-bs-spy="scroll" data-bs-target="#navBar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
+        class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+
+        <!-- Home Start -->
+        <header id="hero-section" class="hero">
+
+            <div class="container-fluid" >
+                <div class="row">
+                    <div
+                        class="mt-5 order-2 col-12 col-lg-6 text-center d-flex justify-content-center flex-column align-items-center">
+
+                        <h2 class=" mt-2 w-50 ">Enjoy Your Healthy
+                            Delicious Food</h2>
+                        <p class="mt-2 w-75 fs-5">KFC is a well-known American fast food restaurant that has gained
+                            global
+                            popularity due to its
+                            Crispy, Kentucky Fried chicken. Unsurprisingly, it’s the world’s fourth-largest fast-food
+                            restaurant chain, after Subway, McDonald’s, and Starbucks.</p>
+                        <div class="btn-container mb-5 d-flex justify-content-center align-items-center">
+
+                            <button class="btn btn-danger rounded-pill me-5">Order Here!</button>
+                            <a class="glightbox text-danger fw-bold fs-5" href="https://youtu.be/nKFZJU7bvaw">
+                                <i class=" me-2 fa-regular fa-circle-play fw-bold"></i>
+                            </a>
+                            <span class="text-danger fs-5 fw-bold">Watch</span>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 order-1 order-lg-2  text-center">
+                        <img class="img-fluid w-75 mt-5" src="images/homeImage.png" alt="hero-image">
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+        <!-- Home End -->
+
+        <!-- Shop Section Start -->
+
+        <section id="shop-section">
+
+            <div class="container">
+                <!-- KFC sets section start -->
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <!-- KFC sets -->
+                        <h5 class="text-danger">Order</h5>
+                        <h2>Check Our Menu</h2>
+                    </div>
+                    <!-- KFC sets -->
+                    <div class="row row-cols-1 row-cols-md-3 g-4 ">
+                        <div class="col ">
+                            <div class="card text-center">
+                                <img src="images/3pcs.jpg" class="card-img-top" alt="3pcs">
+                                <div class="card-body">
+                                    <h5 class="card-title text-danger">3 Pics Fried Chicken</h5>
+                                    <p class="card-text ">3 pieces Chicken (Original Recipe / Hot & Crispy)
+                                        <br /><span> <span class="text-danger fw-bold">2</span> Ice Lemon Tea</span>
+                                    </p>
+
+                                    <p class="fw-bold ">7,000 Kyats</p>
+                                    <a href="#" class="btn btn-danger px-5 ">Order</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card text-center">
+                                <img src="images/5pic.jpg" class="card-img-top" alt="5pcs">
+                                <div class="card-body">
+                                    <h5 class="card-title text-danger">5 Pics Fried Chicken
+
+                                    </h5>
+                                    <p class="card-text">
+                                        5 pieces Chicken (Original Recipe / Hot & Crispy)
+                                        <br /><span>Buy 5 <span class="fw-bold text-danger">Get 1 Free</span></span>
+                                    </p>
+
+                                    <p class="fw-bold">10,000 Kyats</p>
+                                    <a href="#" class="btn btn-danger px-5">Order</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-center">
+                                <img src="images/9pic.jpg" class="card-img-top" alt="3pcs">
+                                <div class="card-body">
+                                    <h5 class="card-title text-danger">9 Pics Fried Chicken</h5>
+                                    <p class="card-text ">9 pieces Chicken (Original Recipe / Hot & Crispy)
+                                        <br /><span> <span class="text-danger fw-bold">2</span> Ice Lemon Tea</span>
+                                    </p>
+
+                                    <p class="fw-bold">15,900 Kyats</p>
+                                    <a href="#" class="btn btn-danger px-5">Order</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- KFC sets section end -->
+                <div class="row mt-5">
+                    <div class="col-12 text-center">
+                        <!-- Menu Title -->
+                        <h5 class="text-danger">Order</h5>
+                        <h2>KFC Sets</h2>
+                    </div>
+                    <!-- Special Items -->
+                    <div class="row row-cols-1 row-cols-md-3 g-4 ">
+                        <div class="col ">
+                            <div class="card text-center">
+                                <img src="images/set1.jpg" class="card-img-top" alt="3pcs">
+                                <div class="card-body">
+                                    <h5 class="card-title text-danger">Special Set - 1</h5>
+                                    <p class="card-text ">4 pcs Chicken & 1 Burger
+
+                                        <br /><span> <span class="text-danger fw-bold">2</span> Cocacola</span>
+                                    </p>
+
+                                    <p class="fw-bold ">8,500 Kyats</p>
+                                    <a href="#" class="btn btn-danger px-5 ">Order</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card text-center">
+                                <img src="images/set2.jpg" class="card-img-top" alt="5pcs">
+                                <div class="card-body">
+                                    <h5 class="card-title text-danger">Special Set - 2</h5>
+                                    <p class="card-text">
+                                        4 pcs Chicken & 2 Burgers
+                                        <br /><span> <span class="text-danger fw-bold">2</span> Cocacola</span>
+                                    </p>
+
+                                    <p class="fw-bold">21,900 Kyats</p>
+                                    <a href="#" class="btn btn-danger px-5">Order</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-center">
+                                <img src="images/set3.jpg" class="card-img-top" alt="3pcs">
+                                <div class="card-body">
+                                    <h5 class="card-title text-danger">Special Set - 3</h5>
+                                    <p class="card-text ">6 pcs Chicken & 3 Potato Chips
+                                        <br /><span> <span class="text-danger fw-bold">4</span> Cocacola</span>
+                                    </p>
+
+                                    <p class="fw-bold">19,900 Kyats</p>
+                                    <a href="#" class="btn btn-danger px-5">Order</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 text-center">
+                        <!-- Menu Title -->
+                        <h5 class="text-danger">Order</h5>
+                        <h2>KFC Special Box Collection</h2>
+                    </div>
+                    <!-- Special Items -->
+                    <div class="row row-cols-1 row-cols-md-3 g-4 ">
+                        <div class="col ">
+                            <div class="card text-center">
+                                <img src="images/wow box.jpg" class="card-img-top" alt="3pcs">
+                                <div class="card-body">
+                                    <h5 class="card-title text-danger">WOW Box</h5>
+                                    <p class="card-text ">4 pcs Chicken & 1 Burger
+
+                                        <br /><span> <span class="text-danger fw-bold">2</span> Cocacola</span>
+                                    </p>
+
+                                    <p class="fw-bold ">6,300 Kyats</p>
+                                    <a href="#" class="btn btn-danger px-5 ">Order</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card text-center">
+                                <img src="images/califonia rice box.jpg" class="card-img-top" alt="5pcs">
+                                <div class="card-body">
+                                    <h5 class="card-title text-danger">Califonia Box</h5>
+                                    <p class="card-text">
+                                        4 pcs Chicken & 2 Burgers
+                                        <br /><span> <span class="text-danger fw-bold">2</span> Cocacola</span>
+                                    </p>
+
+                                    <p class="fw-bold">7,900 Kyats</p>
+                                    <a href="#" class="btn btn-danger px-5">Order</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-center">
+                                <img src="images/zinger tokyo rice box.jpg" class="card-img-top" alt="3pcs">
+                                <div class="card-body">
+                                    <h5 class="card-title text-danger">Special Set - 3</h5>
+                                    <p class="card-text ">6 pcs Chicken & 3 Potato Chips
+                                        <br /><span> <span class="text-danger fw-bold">4</span> Cocacola</span>
+                                    </p>
+
+                                    <p class="fw-bold">8,800 Kyats</p>
+                                    <a href="#" class="btn btn-danger px-5">Order</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+        <!-- Shop Section End -->
+        <!-- KFC About Section Start -->
+        <section id="about-section">
+
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-12 ">
+                        <h5 class="text-danger text-center">About Us</h5>
+                        <h2 class="text-center">KFC History</h2>
+
+                    </div>
+                    <div class="col-12 col-xxl-7">
+                        <img id="kfc-about-image" class=" img img-fluid img-thumbnail mt-3" src="images/aboutImage.webp"
+                            alt="about_KFC">
+                    </div>
+                    <div class="col-12 col-lg-12 col-xxl-5">
+                        <div class="row">
+                            <div class="col-12 col-lg-8 col-xxl-12 p-3 p-xxl-0 mt-xl-3 ">
+                                <p class="aboutText">KFC (Kentucky Fried Chicken) is an American fast food restaurant
+                                    chain
+                                    headquartered in
+                                    Louisville, Kentucky, that specializes in fried chicken. It is the world's
+                                    second-largest
+                                    restaurant chain (as measured by sales) after McDonald's, with 22,621 locations
+                                    globally
+                                    in 150
+                                    countries as of December 2019. The chain is a subsidiary of Yum! Brands, a
+                                    restaurant
+                                    company
+                                    that also owns the Pizza Hut and Taco Bell chains. KFC was founded by Colonel
+                                    Harland
+                                    Sanders
+                                    (1890–1980), an entrepreneur who began selling fried chicken from his roadside
+                                    restaurant in
+                                    Corbin, Kentucky, during the Great Depression. Sanders identified the potential of
+                                    the
+                                    restaurant franchising concept and the first "Kentucky Fried Chicken" franchise
+                                    opened
+                                    in Salt
+                                    Lake City, Utah in 1952. KFC popularized chicken in the fast-food industry,
+                                    diversifying
+                                    the
+                                    market by challenging the established dominance of the hamburger. By branding
+                                    himself as
+                                    "Colonel Sanders", Harland became a prominent figure of American cultural history
+                                    and
+                                    his image
+                                    remains widely used in KFC advertising to this day. However, the company's rapid
+                                    expansion
+                                    overwhelmed the aging Sanders and he sold it to a group of investors led by John Y.
+                                    Brown Jr.
+                                    and Jack C. Massey in 1964.
+                                </p>
+                            </div>
+                            <div class="col-12 col-lg-4 col-xxl-12 mt-3 mt-lg-4 ">
+                                <iframe class="about-video border-light rounded   " width="100%" height="315"
+                                    src="https://www.youtube.com/embed/pKa_u31EJwU?si=3sy5JTj9GCTRwRhj"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- KFC About Section End -->
+        <!-- KFC Event Section Start -->
+        <section id="event-section">
+
+            <div class="container">
+                <div class="col-12 text-center">
+                    <!-- Event Title -->
+                    <h5 class="text-danger">Events of KFC</h5>
+                    <h2>Share Your Moment in KFC
+                    </h2>
+
+                </div>
+                <!-- Event Carousel -->
+
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="event-image" src="images/event1.jpg"
+                                class="img-fluid img-thumbnail d-block w-100" alt="event1">
+
+                        </div>
+                        <div class="carousel-item">
+                            <img class="event-image" src="images/event2.jpg"
+                                class="img-fluid img-thumbnail d-block w-100" alt="event2">
+
+                        </div>
+                        <div class="carousel-item">
+                            <img class="event-image" src="images/event3.png"
+                                class="img-fluid img-thumbnail d-block w-100" alt="event3">
+
+                        </div>
+
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+
+        </section>
+        <!-- KFC Event Section End -->
+
+        <!-- KFC Gallery Section Start -->
+        <section id="gallery-section" class="mt-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <h5 class="text-danger">KFC Gallery </h5>
+                        <h2>Our KFC Images</h2>
+                    </div>
+                    <div class="row ">
+                        <div class="col-12 kfc-gallery-img text-center">
+                            <img class="img img-fluid img-thumbnail" src="./images/gallery1.jpg" alt="gallery1-img">
+                        </div>
+                        <div class="col-12 kfc-gallery-img text-center">
+                            <img class="img img-fluid img-thumbnail" src="./images/gallery2.jpg" alt="gallery2-img">
+                        </div>
+
+                        <div class="col-12 kfc-gallery-img text-center">
+                            <img class="img img-fluid img-thumbnail" src="./images/gallery3.jpg" alt="gallery3-img">
+                        </div>
+                        <div class="col-12 kfc-gallery-img text-center">
+                            <img class="img img-fluid img-thumbnail" src="./images/gallery4.jpg" alt="gallery4-img">
+                        </div>
+                        <div class="col-12 kfc-gallery-img text-center">
+                            <img class="img img-fluid img-thumbnail" src="./images/gallery5.jpg" alt="gallery5-img">
+                        </div>
+                        <div class="col-12 kfc-gallery-img text-center">
+                            <img class="img img-fluid img-thumbnail" src="./images/gallery6.jpg" alt="gallery6-img">
+                        </div>
+                        <div class="col-12 kfc-gallery-img text-center">
+                            <img class="img img-fluid img-thumbnail" src="./images/gallery7.jpg" alt="gallery7-img">
+                        </div>
+                        <div class="col-12 kfc-gallery-img text-center">
+                            <img class="img img-fluid img-thumbnail" src="./images/gallery8.jpg" alt="gallery8-img">
+                        </div>
+
+                    </div>
+                    <!-- Next and previous buttons -->
+                    <div class="galleryImgShifter d-block m-auto">
+                        <a class="prev" onclick="plusSlides(-1)">
+                            <i class="fs-2 prevBtn fa-solid fa-circle-chevron-left"></i>
+                        </a>
+                        <a class="next" onclick="plusSlides(1)">
+                            <i class="fs-2 nextBtn fa-solid fa-circle-chevron-right"></i>
+                        </a>
+
+                    </div>
+
+                    <div class="gallery-small-container d-flex gap-2 ">
+                        <div class="smallImg">
+                            <img class="img img-fluid img-thumbnail" onclick="currentSlide(1)" src="images/gallery1.jpg"
+                                alt="gallerySmallImg1">
+                        </div>
+                        <div class="smallImg">
+                            <img class="img img-fluid img-thumbnail" onclick="currentSlide(2)" src="images/gallery2.jpg"
+                                alt="gallerySmallImg2">
+                        </div>
+                        <div class="smallImg">
+                            <img class="img img-fluid img-thumbnail" onclick="currentSlide(3)" src="images/gallery3.jpg"
+                                alt="gallerySmallImg3">
+                        </div>
+                        <div class="smallImg">
+                            <img class="img img-fluid img-thumbnail" onclick="currentSlide(4)" src="images/gallery4.jpg"
+                                alt="gallerySmallImg4">
+                        </div>
+                        <div class="smallImg">
+                            <img class="img img-fluid img-thumbnail" onclick="currentSlide(5)" src="images/gallery5.jpg"
+                                alt="gallerySmallImg5">
+                        </div>
+                        <div class="smallImg">
+                            <img class="img img-fluid img-thumbnail" onclick="currentSlide(6)" src="images/gallery6.jpg"
+                                alt="gallerySmallImg6">
+                        </div>
+                        <div class="smallImg">
+                            <img class="img img-fluid img-thumbnail" onclick="currentSlide(7)" src="images/gallery7.jpg"
+                                alt="gallerySmallImg7">
+                        </div>
+                        <div class="smallImg">
+                            <img class="img img-fluid img-thumbnail" onclick="currentSlide(8)" src="images/gallery8.jpg"
+                                alt="gallerySmallImg8">
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+    </div>
+    <!-- KFC Gallery Section End -->
+
+    <!-- Contact Section Start -->
+    <section class="mt-5 " id="contact-section">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 text-center">
+                    <h5 class="text-danger">Contact Us</h5>
+                    <h2>Need Help?</h2>
+                </div>
+                <div class="row justify-content-center text-center contact">
+                    <div class="col-12 col-md-5 bg-secondary-subtle mt-3 pt-3 contactItem shadow-sm rounded">
+                        <h3><i class="fa-solid fa-location-dot me-3"></i> Address</h3>
+                        <p> Number 23<sup>rd</sup> Main Road Sagaing</p>
+                    </div>
+                    <div
+                        class="col-12 col-md-5 offset-md-2 bg-secondary-subtle mt-3 pt-3 contactItem shadow-sm rounded">
+                        <h3><i class="fa-solid fa-envelope me-3"></i> Email Address</h3>
+                        <p>kfcadmin@gmail.com</p>
+                    </div>
+                    <div class="col-12 col-md-5 bg-secondary-subtle mt-3 pt-3 contactItem shadow-sm rounded">
+                        <h3><i class="fa-solid fa-phone me-3"></i> Phone Number</h3>
+                        <p>+959936544382</p>
+                    </div>
+                    <div
+                        class="col-12 col-md-5 offset-md-2 bg-secondary-subtle mt-3 pt-3 contactItem shadow-sm rounded">
+                        <h3><i class="fa-solid fa-clock me-3"></i> Opening Time</h3>
+                        <p>Daily 8:00 AM to 8:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center ">
+                <div class="col-12 mt-5 col-md-5 contactImg">
+                    <img class="img img-fluid img-thumbnail" src="images/contact.svg" alt="contact-img">
+                </div>
+                <div class="row sendEmail col-md-7 mt-5 ">
+
+                    <div class="col-12 form-floating mt-2 shadow-sm p-1">
+                        <input class="form-control" type="text" name="" id="name" placeholder="enter your name">
+                        <label class="form-label" for="name">Name</label>
+                    </div>
+                    <div class="col-12 form-floating mt-2 shadow-sm p-1">
+                        <input class="form-control" type="email" name="" id="email"
+                            placeholder="enter your email address">
+                        <label class="form-label" for="name">Email</label>
+                    </div>
+                    <div class="col-12 form-floating mt-2 shadow-sm p-1">
+                        <input class="form-control" type="text" name="" id="subject" placeholder="subject">
+                        <label class="form-label" for="name">Subject</label>
+                    </div>
+                    <div class="col-12 form-floating mt-2 shadow-sm p-1">
+                        <textarea class="form-control" name="" id="comment" placeholder="your opnion"></textarea>
+                        <label class="form-label" for="comment">Comment</label>
+
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-danger float-end px-2 pt-2"><i
+                                class="fa-solid fa-paper-plane me-1"></i>send email</button>
+                    </div>
+                </div>
+            </div>-
+        </div>
+    </section>
+    <section class="footer-section bg-dark text-light mt-3 py-5 h-100" id="footer-section">
+
+        <div class="row text-center justify-content-center gap-md-3 footNav p-3 align-items-center">
+            <div class="col-6 col-md-2 order-md-1 footNavItem  ">
+                <i class="fa-solid fa-location-dot me-3 mb-3"></i>
+                <h3 class="mt-2 footNavText"> Address</h3>
+                <p> Number 23<sup>rd</sup> Main Road Sagaing</p>
+            </div>
+            <div class="col-6 col-md-2 order-md-2 footNavItem ">
+                <i class="fa-solid fa-clock me-3 mb-4"></i>
+                <h3 class="mt-2 footNavText"> Opening Time</h3>
+                <p>Daily 8:00 AM to 8:00 PM</p>
+            </div>
+            <div class="col-6 col-md-2 order-md-4  footNavItem ">
+                <i class="fa-solid fa-phone me-3 mb-4"></i>
+                <h3 class="mt-2 footNavText"> Phone Number</h3>
+                <p>+959936544382</p>
+            </div>
+            <div class="col-6 col-md-2 order-md-5 footNavItem ">
+                <i class="fa-solid fa-thumbs-up me-3 mb-4"></i>
+                <h3 class="mt-2 footNavText">Follow Us</h3>
+                <i title="Facebook" class="fa-brands fa-facebook text-bg-primary rounded-5 p-1 foot-logo"></i>
+                <i title="Youtube" class="fa-brands fa-youtube text-bg-danger rounded-5 p-1 foot-logo"></i>
+                <i title="X" class="fa-brands fa-x-twitter text-bg-light  rounded-5 p-1 foot-logo"></i>
+                <i title="Instagram" class="fa-brands fa-instagram text-bg-danger rounded-5 p-1 foot-logo"></i>
+
+            </div>
+            <div class="col-12 col-md-2 order-md-3 mt-3 mt-md-0  text-center footerImg">
+                <img class="img img-fluid img-thumbnail" src="./images/footerLogo.png" alt="kfc-footer-logo">
+            </div>
+        </div>
+        <h6 class="text-center mt-2">&copy; Copyright <span class="text-danger">KFC</span> All Rights Reserved</h6>
+        <h6 class="text-center">Designed by <i class="text-danger">Htetmyowin</i></h6>
+
+
+    </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up"></i></button>
+
+    <div id="preloader">
+        <div class="loading-text">Loading...</div>
+    </div>
+
+
+
+
+
+
+
+</body>
+<!-- Glight Box JS CDN Link -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/js/glightbox.min.js"
+    integrity="sha512-RBWI5Qf647bcVhqbEnRoL4KuUT+Liz+oG5jtF+HP05Oa5088M9G0GxG0uoHR9cyq35VbjahcI+Hd1xwY8E1/Kg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- BootStrap CDN LINK JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+<!-- script.js file link -->
+<script src="script.js"></script>
+
+</html>
