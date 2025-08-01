@@ -4,7 +4,7 @@ A clean, responsive **KFC landing page clone** built using **Bootstrap 5**.
 This project replicates the look and feel of the official KFC website, perfect for learning layout, responsive design, and component usage.
 
 ## 🔗 Live Demo
-[👉 View the KFC Clone](https://webdev-shyam.github.io/Boostrap_KFC_Project_By_HMW/KFC_Bootstrap)
+[👉 View the KFC Clone](https://kfcchickenshop.netlify.app/)
 
 ## 🖼️ Screenshots
 
